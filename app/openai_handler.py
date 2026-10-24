@@ -87,7 +87,7 @@ class ExpressClientWrapper:
             else:
                 proxies = {"https://": app_config.PROXY_URL}
 
-        client_args = {'timeout': 300}
+        client_args = {'timeout': 800}
         if proxies:
             client_args['proxies'] = proxies
         if app_config.SSL_CERT_FILE:
@@ -125,7 +125,7 @@ class ExpressClientWrapper:
             else:
                 proxies = {"https://": app_config.PROXY_URL}
 
-        client_args = {'timeout': 300}
+        client_args = {'timeout': 800}
         if proxies:
             client_args['proxies'] = proxies
         if app_config.SSL_CERT_FILE:
